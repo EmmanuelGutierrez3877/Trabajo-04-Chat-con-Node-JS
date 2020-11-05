@@ -1,1 +1,1 @@
-<?php require_once("Public/index.html")?>
+<?php require_once("/Public/index.html")?>
