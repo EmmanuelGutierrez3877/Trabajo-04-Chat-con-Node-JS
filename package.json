@@ -7,9 +7,7 @@
     "start":"node Server/main.js",
     "serve": "nodemon Server/main.js"
   },
-  "keywords": [
-    "heroku"
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -18,8 +16,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  },
-  "engines": {
-    "node": "14.15"
   }
 }
