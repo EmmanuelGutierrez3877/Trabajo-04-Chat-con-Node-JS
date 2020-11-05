@@ -18,7 +18,7 @@ io.on('connection',function(socket){
 
     socket.on('new-message',function(data){
         messages.push(data);
-        if(messages.length >5){
+        if(messages.length >15){
             messages.shift();
         }
 
