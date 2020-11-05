@@ -4,7 +4,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 var messages = [];
-
+var port = process.env.PORT||5000;
 
 app.use(express.static('Public'));
 
@@ -26,7 +26,7 @@ io.on('connection',function(socket){
     });
 });
 
-server.listen(process.env.PORT||5000,function(){
+server.listen(port,function(){
     console.log("server corriendo");
 });
 
