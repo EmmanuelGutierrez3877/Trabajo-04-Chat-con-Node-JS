@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:5000',{'forceNew':true});
+var socket = io.connect('https://trabajo-04-chat-con-node-js.herokuapp.com:5000',{'forceNew':true});
 
 socket.on('messages',function(data){
     console.log(data);
