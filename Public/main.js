@@ -7,9 +7,9 @@ socket.on('messages',function(data){
 
 function render (data){
     var html = data.map(function(elem,index){
-        return(`<div>
+        return(`<div class="mensaje">
                     <strong>${elem.author}</strong>:${elem.text}
-                </div>`);
+                </div><br/>`);
     }).join(" ");
 
     document.getElementById('messages').innerHTML = html;
